@@ -1,0 +1,7 @@
+pragma solidity >=0.5.0 <0.6.0;
+
+import "./zombiefactory.sol"; // another tab called zombiefactory.sol will be imported into the new contract file
+
+contract ZombieFeeding is ZombieFactory {
+
+}
