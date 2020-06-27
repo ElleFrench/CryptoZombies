@@ -1,0 +1,12 @@
+pragma solidity >=0.5.0 <0.6.0;
+
+import "./zombiefactory.sol";
+
+contract ZombieFeeding is ZombieFactory {
+
+  function feedAndMultiply(uint _zombieId, uint _targetDna) public {
+      require(msg.sender == zombieToOwner[_zombieId]); //Add a require statement to verify that msg.sender is equal to this zombie's owner 
+      Zombie storage myZombie = zombies[_zombieId]; //Declare a local Zombie named myZombie (storage). Set this variable to be equal to index _zombieId in our zombies array
+  }
+
+}
